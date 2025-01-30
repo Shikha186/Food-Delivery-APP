@@ -1,14 +1,19 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import viteLogo from '/vite.svg'
+import logInPopUp from './components/logInPopUp/logInPopUp'
+
+
 import './app.css'
 
 export function App() {
-  const [count, setCount] = useState(0)
+  const[showLogin,setShowLogin]=useState(false);
 
   return (
     <>
-        
+        {showLogin?<logInPopup/>:<></>}
+        <div className='app'>
+          <Navbar setShowLogin={setShowLogin} />
+          <p>hii</p>
+        </div>
     </>
   )
 }
+
