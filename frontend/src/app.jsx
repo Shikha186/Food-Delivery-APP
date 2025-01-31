@@ -1,5 +1,5 @@
 import logInPopUp from './components/logInPopUp/logInPopUp'
-
+import Navbar from 
 
 import './app.css'
 
