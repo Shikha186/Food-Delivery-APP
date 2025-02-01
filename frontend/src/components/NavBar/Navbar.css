@@ -1,0 +1,57 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    color:#49557e;
+    font-size: 18px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border:1px solid transparent;
+    color:#49557e;
+    padding:10px 30px;
+    /* border-radius: 50px; */
+    cursor: pointer;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar li{
+    cursor: pointer;
+}
+.search-box input{
+    background: transparent;
+    border:1px solid transparent;
+    font-size:12px;
+    margin-left: 10px;
+    
+
+}
+.search-i{
+    margin-bottom: -5px;
+}
+.cart{
+    font-size:30px;
+}
