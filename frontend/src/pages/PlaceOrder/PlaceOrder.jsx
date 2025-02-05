@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PlaceOrder = () => {
+export const PlaceOrder = () => {
     const {getTotalCartAmount}= useContext(StoreContext)
   return (
    <form className='place-order'>
@@ -52,4 +52,4 @@ const PlaceOrder = () => {
   )
 }
 
-export default PlaceOrder
+export default PlaceOrder;
