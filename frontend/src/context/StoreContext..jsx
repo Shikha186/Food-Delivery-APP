@@ -1,3 +1,22 @@
+import { createContext } from "react";
+
+export const StoreContext=createContext(null);
+const StoreContextProvider=(props)=>{
+    const contextValue={
+
+    }
+    return(
+        <StoreContext.Provider value={contextValue}>
+            {props.children}
+        </StoreContext.Provider>
+        
+    )
+
+}
+export default StoreContextProvider;
+    
+
+
 const getTotalCartAmount=()=>
     {
         let totalAmount=0;
@@ -16,8 +35,5 @@ const getTotalCartAmount=()=>
     const contextValue={
         getTotalCartAmount
     }
-    return(
-        <StoreContext.Provider value={contextValue}>
-    {props.children}
-        
-    )
+    
+    

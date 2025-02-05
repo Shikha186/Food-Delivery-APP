@@ -2,7 +2,7 @@ import React from "react";
 import "./ExploreMenu.css";
 import { menu_head } from "../../assets/food images/asset";
 
-function ExploreMenu(){
+function ExploreMenu({category,setCategory}) {
     return(
         <div  className="explore-menu">
             <div className="explore-menu-content">
@@ -11,8 +11,8 @@ function ExploreMenu(){
             </div>
             <div className="menu-list">
                 {menu_head.map((menu,index)=>(
-                    <div key={index} className="explore-menu-list-item">
-                        <img src={menu.menu_img} alt={menu.menu_name}/>
+                    <div onClick={() =>setCategory(prev=>prev===menu.menu_name?"All":menu.menu_name)}  key={index} className="explore-menu-list-item">
+                        <img  className={category===menu.menu_name?"active":""} src={menu.menu_img} alt={menu.menu_name}/>
                         <p>{menu.menu_name}</p>
                     </div>
                 ))}
