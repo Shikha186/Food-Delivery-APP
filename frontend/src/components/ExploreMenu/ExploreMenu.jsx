@@ -7,7 +7,7 @@ function ExploreMenu(){
         <div  className="explore-menu">
             <div className="explore-menu-content">
                 <h2>Explore our menu</h2>
-                <p className="explore-menu-text">Our menu features a wide variety of delicious dishes made from the freshest ingredients. From classic comfort foods to exotic international cuisine, we have something for everyone. Whether you're in the mood for pizza, salad, main course, dessert, South Indian cuisine, drinks, or continental dishes, we've got you covered. Browse our menu to discover your new favorite dish!</p>
+                <p className="explore-menu-text">Our menu features a wide variety of delicious dishes made from the freshest ingredients. From classic comfort foods to exotic international cuisine, we have something for everyone.</p>
             </div>
             <div className="menu-list">
                 {menu_head.map((menu,index)=>(
