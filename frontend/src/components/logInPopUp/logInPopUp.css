@@ -9,7 +9,7 @@
 }
 .login-popup-container{
     place-self:center;
-    width:max(23vw,330px);
+    width:max(25vw,330px);
     color:#808080;
     background-color: white;
     flex-direction: column;
@@ -17,4 +17,17 @@
     padding: 25px;
     border-radius:14px;
     animation: fadeIn 0.5s;
+}
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.cross{
+    background-color: red;
+    color: white;
+    width: 25px;
+    height:max-content;
+    text-align: center;
+    font-size:1rem;
 }

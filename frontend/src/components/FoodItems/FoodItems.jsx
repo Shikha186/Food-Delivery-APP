@@ -8,7 +8,7 @@ import { StoreContext } from '../../context/StoreContext.';
 
 
 function FoodItems({id,name,image,price,description}){
-  const[itemCount,setItemcount]=useState(0);
+  
   const{cartItems,addToCart,removeFromCart}=useContext(StoreContext);
   return (
     <div className='food-item'>
@@ -24,7 +24,7 @@ function FoodItems({id,name,image,price,description}){
             <p className='description'>{description}</p>
             <p className='price'><FaRupeeSign  className='rupee'/>{price}</p>
             <div>
-              {!cartItems[id]?<button className="add-button" onClick={()=>addToCart(id)}>Add</button>:
+              {!cartItems[id]?<button className="b" onClick={()=>addToCart(id)}>Add</button>:
                 <div className="add-button-container">
                   <button className="add-button" onClick={()=>removeFromCart(id)}>-</button>
                   <p className="item-count">{cartItems[id]}</p>

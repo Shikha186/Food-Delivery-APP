@@ -1,4 +1,8 @@
 import React from 'react'
+import { useContext } from 'react'
+import { StoreContext } from '../../context/StoreContext.'
+import { useNavigate } from 'react-router-dom'
+import './Cart.css'
 
 
 const Cart = () => {
@@ -7,7 +11,7 @@ const Cart = () => {
     return (
     <div className='cart'>
         <div className='cart-items'>
-            <div className='cart-item-title'>
+            <div className='cart-items-title'>
                 <p>Items</p>
                 <p>Title</p>
                 <p>Price</p>
@@ -15,21 +19,24 @@ const Cart = () => {
                 <p>Total</p>
                 <p>Remove</p>
             </div>
-<br />
-      <hr />
-      {food-list.map((item,index)=>{
+        <br />
+        <hr />
+      {food_list.map((item,index)=>{
         if(cartItems[item._id]>0)
         {
             return (
-            <div className='cart-items-title cart-items-item'>
-               <img src={item.image} alt=""/>
-               <p>{item.name}</p>
-               <p>${item.price}</p>
-               <p>{cartItems[item._id]}</p>
-            <p>${item.price*cartItems[item._id]}</p>
-             <p onClick={()=>removeFromCart(item._id)}>x</p>
-             <h1>hii</h1>
+            <div>
+                <div className='cart-items-title cart-items-item'>
+                    <img src={item.image} alt=""/>
+                    <p>{item.name}</p>
+                    <p>${item.price}</p>
+                    <p>{cartItems[item._id]}</p>
+                    <p>${item.price*cartItems[item._id]}</p>
+                    <p onClick={()=>removeFromCart(item._id)} className='cut'>x</p>
                 </div>
+                <hr/>
+            </div>
+            
                 
             )
         }
@@ -75,4 +82,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default Cart;
