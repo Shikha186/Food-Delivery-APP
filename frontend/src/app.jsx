@@ -21,7 +21,7 @@ export function App() {
           <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/Cart" element={<Cart/>}></Route>
-            <Route path="/PlaceOrder" element={<PlaceOrder/>}></Route>
+            <Route path="/order" element={<PlaceOrder/>}></Route>
           </Routes>
           
         </div>

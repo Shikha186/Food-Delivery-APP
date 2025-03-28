@@ -15,7 +15,8 @@ function Navbar({setShowLogin}){
                
                <ul className="nav-menu">
                 <Link to="/"><li onClick={()=> setmenu("Home")}  className={menu==="Home"? "active":""} >Home</li></Link>
-                <li onClick={()=> setmenu("Menu")} className={menu==="Menu"? "active":""}>Menu</li>
+                <Link to="/"><li onClick={()=> setmenu("Menu")} className={menu==="Menu"? "active":""}>Menu</li></Link>
+                
                 <li onClick={()=> setmenu("Mobile-app")} className={menu==="Mobile-app"? "active":""}>Mobile-app</li>
                 <li onClick={()=> setmenu("Contact us")} className={menu==="Contact us"? "active":""}>Contact us</li>  
                </ul>

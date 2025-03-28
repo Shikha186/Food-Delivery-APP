@@ -21,16 +21,16 @@ const LogInPopUp = ({setShowLogin}) => {
             <input type='email' placeholder='Your email' required></input>
             <input type='password' placeholder='Password' required></input>
            </div>
-           <div>
-            <button> {CurrState==="Sign Up"?"Create accouunt":"Login"}</button>
-          <div className='login-pop-up-condition'>
-            <label>
+           <div className='create-acc'>
+            <button> {CurrState==="Sign Up"?"Create account":"Login"}</button>
+            <div className='login-pop-up-condition'>
+              <label>
                 <input type='checkbox' required></input>
                 By continuing,i agree to the terms of use & privacy policy. 
-            </label>
-{CurrState==='Sign Up'?<p>Already have an account? <span onClick={()=>setCurrState("Login")}>Login here</span></p>:
-<p>Create a new account?<span onClick={()=>setCurrState("Sign Up")}>Click here</span></p>}
-          </div>
+              </label>
+              {CurrState==='Sign Up'?<p>Already have an account? <span onClick={()=>setCurrState("Login")} className='log'>Login here</span></p>:
+              <p>Create a new account?<span onClick={()=>setCurrState("Sign Up")}>Click here</span></p>}
+            </div>
            </div>
         </form>
       
