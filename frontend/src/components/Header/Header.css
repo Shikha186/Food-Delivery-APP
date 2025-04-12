@@ -1,0 +1,70 @@
+/* .header{
+    width:60vw;
+    margin:30px auto;
+    background-image: url("headimg.jpg");
+    background-size: contain;
+    /* position: relative; */
+.box{
+    width:90vw;
+    height:70vh;
+    margin: auto;
+    background-image: url(headimg.jpg);
+    background-size:cover; /* Adjusts the image to cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border: 2px solid black;
+    margin-top: -10px;
+}
+.header {
+    width: 60vw;
+    margin: 30px auto;
+    
+    /* position: relative; */
+}
+.header-content{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.5vw;
+    max-width:90%;
+    /* bottom:10%;
+    left:6vw; */
+    animation: Fadein 3s;
+
+}
+@keyframes Fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header-content h2{
+    color:white;
+    font-weight: 500;
+    font-size: max(4.5vw);
+}
+.header-content p{
+    color:white;
+    font-size: 1vw;
+}
+.header-content button{
+    border: none;
+    color: #747474;
+    background-color:transparent;
+    border-radius: 50%;
+    padding: 1vw 2.3vw;
+    font-weight: 500;
+    font-size: max(1vw, 13px);
+    cursor: pointer;
+}
+.header-content button:hover{
+    background-color: #747474;
+    color:white;
+}
+
